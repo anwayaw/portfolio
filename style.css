@@ -1,0 +1,46 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+/* Add a delay based on the --delay variable */
+.animate-fade-in {
+  animation-delay: var(--delay, 0s);
+}
+
+/* Ensure proper spacing and layout */
+header {
+  padding-top: 2rem;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-gray-900 {
+    background-color: #1f2937;
+  }
+  .dark\:text-gray-100 {
+    color: #f9fafb;
+  }
+  .dark\:text-gray-400 {
+    color: #d1d5db;
+  }
+  .dark\:text-gray-600 {
+    color: #4b5563;
+  }
+  .dark\:bg-gray-100 {
+    background-color: #374151;
+  }
+  .dark\:border-gray-700 {
+    border-color: #374151;
+  }
+}
